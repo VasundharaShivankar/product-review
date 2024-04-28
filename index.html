@@ -8,6 +8,7 @@
     
 </head>
 <body>
+    <h1 style="text-align: center; margin-top:20px;">Product Review</h1>
     <img src="./img/nick2.webp" class="product-img1" id="product-img1"/>
     <div class="product-img-container">
         <img src="./img/nick.webp" class="product-img" onclick="changeImage(1)"/>
@@ -20,7 +21,6 @@
     <script>
         function changeImage(num){
             const mainimage = document.getElementById("product-img1");
-
             if(num==1){
                 mainimage.src = "./img/nick.webp";
             }
