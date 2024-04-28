@@ -3,47 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
     <title>Product Review Page</title>
-    <style>
-        body{
-            background: rgb(59,145,255);
-            background: linear-gradient(90deg, rgba(59,145,255,1) 6%, rgba(255,255,255,1) 51%, rgba(59,145,255,1) 100%);
-            height: 100vh;
-        }
-        .product-img1{
-            width: 400px;
-            height: 400px;
-            object-fit: cover;
-            border: 1px solid black;
-            border-radius: 20px;
-            box-shadow: 0 0 10px 3px grey;
-            margin: 20px auto;
-            display: block;
-        }
-        .product-img{
-            height: 70px;
-            object-fit: cover;
-            border: 1px solid black;
-            border-radius: 5px;
-            box-shadow: 0 0 10px 3px grey;
-            margin: 10px;
-            cursor: pointer;
-        }
-        .product-img-container{
-            display: flex;
-            justify-content: center;
-        }
-    </style>
+    
 </head>
 <body>
-    <img src="product_color_cream.avif" class="product-img1" id="product-img1"/>
+    <img src="./img/nick2.webp" class="product-img1" id="product-img1"/>
     <div class="product-img-container">
-        <img src="product_color_cream.avif" class="product-img" onclick="changeImage(1)"/>
-        <img src="product_color_graphite.avif" class="product-img" onclick="changeImage(2)"/>
-        <img src="product_color_green.avif" class="product-img" onclick="changeImage(3)"/>
-        <img src="product_color_lime.avif" class="product-img" onclick="changeImage(4)"/>  
-        <img src="product_color_phantom_black.avif" class="product-img" onclick="changeImage(5)"/>
-        <img src="product_color_sky_blue.avif" class="product-img" onclick="changeImage(6)"/>
+        <img src="./img/nick.webp" class="product-img" onclick="changeImage(1)"/>
+        <img src="./img/nick1.webp" class="product-img" onclick="changeImage(2)"/>
+        <img src="./img/nick2.webp" class="product-img" onclick="changeImage(3)"/>
+        <img src="./img/nick4.webp" class="product-img" onclick="changeImage(4)"/>
+        <img src="./img/nick5.webp" class="product-img" onclick="changeImage(5)"/>
     </div>
 
     <script>
@@ -51,22 +22,19 @@
             const mainimage = document.getElementById("product-img1");
 
             if(num==1){
-                mainimage.src = "product_color_cream.avif";
+                mainimage.src = "./img/nick.webp";
             }
             else if(num==2){
-                mainimage.src = "product_color_graphite.avif";
+                mainimage.src = "./img/nick1.webp";
             }
             else if(num==3){
-                mainimage.src = "product_color_green.avif";
+                mainimage.src ="./img/nick2.webp";
             }
             else if(num==4){
-                mainimage.src = "product_color_lime.avif";
+                mainimage.src = "./img/nick4.webp";
             }
             else if(num==5){
-                mainimage.src = "product_color_phantom_black.avif";
-            }
-            else if(num==6){
-                mainimage.src = "product_color_sky_blue.avif";
+                mainimage.src = "./img/nick5.webp";
             }
         }
     </script>
